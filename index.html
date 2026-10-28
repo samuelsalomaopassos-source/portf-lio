@@ -223,6 +223,41 @@ button{font:inherit;color:inherit;cursor:pointer}
 .xsell.dark{justify-self:center;color:var(--fg);padding:10px 16px;border-radius:999px;border:1px solid var(--line);background:var(--surface)}
 .premium{margin-block:0 24px}
 
+/* ---------- Por que Reels ---------- */
+.vsgrid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:16px}
+.vsold,.vsnew{display:grid;gap:12px;align-content:start;padding:22px;border-radius:18px;min-width:0}
+.vsold{background:var(--surface);border:1px solid var(--line)}
+.vsnew{background:var(--feat);color:var(--feat-ink)}
+.vstag{justify-self:start;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:6px;border:1px solid var(--line);color:var(--muted)}
+.vstag.hot{background:var(--cta);border-color:var(--cta);color:#fff}
+.vsrow{display:grid;gap:2px;padding:10px 0;border-top:1px solid var(--line)}
+.vsrow b{font-family:var(--display);font-size:18px;text-decoration:line-through;text-decoration-color:var(--cta);text-decoration-thickness:2px}
+.vsrow span{color:var(--muted);font-size:15px}
+.vsnew ul{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.vsnew li{display:grid;gap:2px;padding-left:28px;position:relative;font-size:15px;opacity:.92}
+.vsnew li::before{content:"✓";position:absolute;left:0;top:0;width:20px;height:20px;border-radius:50%;display:grid;place-items:center;background:var(--ok-on-dark);color:#0f3d24;font-size:12px;font-weight:700}
+.vsnew li b{font-family:var(--display);font-size:18px;opacity:1}
+.proof{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;margin-top:16px;padding:18px 22px;border-radius:18px;background:var(--saffron-soft);border:2px solid var(--saffron)}
+.proofnum{font-family:var(--display);font-weight:800;font-size:clamp(40px,6vw,60px);line-height:1;color:var(--cta)}
+.proof p{flex:1 1 300px;max-width:60ch}
+.proof a{color:var(--cta);font-weight:700}
+.roi{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:16px;margin-top:16px}
+.roiq{display:grid;gap:10px;padding:22px;border-radius:18px;border:1px solid var(--line);background:var(--surface);min-width:0}
+.roiq h3{font-size:22px;font-weight:700}
+.roiq label,.roilab{font-size:14px;color:var(--muted)}
+.roiin{display:flex;align-items:center;gap:8px;max-width:220px;padding:6px 14px;border-radius:12px;border:1px solid var(--line);background:var(--bg)}
+.roiin span{font-family:var(--display);font-weight:700}
+.roiin input{width:100%;border:0;background:transparent;color:var(--fg);font:700 24px var(--display);padding:6px 0}
+.roiin input:focus{outline:none}
+.roiin:focus-within{border-color:var(--cta)}
+.roia{position:relative;overflow:hidden;display:grid;align-content:center;gap:4px;padding:24px;border-radius:18px;background:var(--night);color:#eef2ff;min-width:0}
+.roia::before{content:"";position:absolute;width:220px;height:220px;right:-70px;top:-90px;border-radius:50%;background:var(--ok-on-dark);filter:blur(70px);opacity:.25}
+.roia > *{position:relative}
+.roibig{font-family:var(--display);font-weight:800;font-size:clamp(64px,9vw,96px);line-height:.9;color:var(--ok-on-dark)}
+.roiunit{font-family:var(--display);font-size:22px;font-weight:700}
+.roia p{color:#c6cfea;font-size:15px}
+@media (max-width:860px){.vsgrid,.roi{grid-template-columns:1fr}}
+
 /* ---------- Comparativo ---------- */
 .tablebox{overflow-x:auto;border:1px solid var(--line);border-radius:18px;background:var(--surface)}
 table{width:100%;border-collapse:collapse;min-width:640px}
@@ -481,6 +516,56 @@ footer{padding-block:24px 40px;color:var(--muted);font-size:13px}
   </div>
 </section>
 
+<section id="porque" class="why">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Por que Reels</span>
+      <h2>Seu próximo cliente está com o celular na mão agora</h2>
+      <p class="lead">Antes de escolher onde anunciar, pense onde o seu cliente passa o dia. Um Reel não acaba quando o mês vira: ele fica no seu perfil, trabalha de dia e de noite, e você sabe exatamente quantas pessoas viram.</p>
+    </div>
+    <div class="vsgrid">
+      <div class="vsold">
+        <span class="vstag">Mídia tradicional</span>
+        <div class="vsrow"><b>Outdoor</b><span>Só quem passa naquela rua vê. Acabou o aluguel, acabou o anúncio.</span></div>
+        <div class="vsrow"><b>Rádio</b><span>Alguns segundos no ar. Se o cliente não estava ouvindo, perdeu.</span></div>
+        <div class="vsrow"><b>Panfleto</b><span>Dura até a próxima lixeira. Não dá para saber quem leu.</span></div>
+      </div>
+      <div class="vsnew">
+        <span class="vstag hot">Reels no seu perfil</span>
+        <ul>
+          <li><b>Fica no ar</b>Continua no seu perfil e pode ser repostado nos stories e impulsionado quando quiser.</li>
+          <li><b>Vai além do seu bairro</b>Quem assiste compartilha, marca o amigo, e o Instagram mostra para gente nova.</li>
+          <li><b>Mostra o resultado</b>Você vê visualizações, curtidas, comentários e mensagens de cada vídeo.</li>
+          <li><b>O cliente chama na hora</b>Viu o prato, a peça ou o serviço? Um toque e ele está no seu direct ou WhatsApp.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="proof">
+      <span class="proofnum num">84,6 mil</span>
+      <p>visualizações em <a href="https://www.instagram.com/reel/DQob7xtDvg1/" target="_blank" rel="noopener">um único Reel</a> que gravei para a Casa da Brasa. Imagine quantas pessoas precisariam passar na frente de um outdoor para chegar nesse número.</p>
+    </div>
+    <div class="roi" aria-live="polite">
+      <div class="roiq">
+        <span class="eyebrow">Faça a conta</span>
+        <h3>Quantos clientes novos pagam o seu pacote?</h3>
+        <label for="roiTicket">Quanto um cliente gasta em média no seu negócio</label>
+        <div class="roiin"><span>R$</span><input id="roiTicket" type="number" inputmode="numeric" min="5" step="5" value="60"></div>
+        <span class="roilab">Pacote</span>
+        <div class="seg" id="roiPack">
+          <button type="button" data-v="300" aria-pressed="true">4 Reels<small>R$ 300</small></button>
+          <button type="button" data-v="480" aria-pressed="false">Mensal 8 Reels<small>R$ 480/mês</small></button>
+          <button type="button" data-v="1450" aria-pressed="false">Premium<small>R$ 1.450</small></button>
+        </div>
+      </div>
+      <div class="roia">
+        <span class="roibig num" id="roiN">5</span>
+        <span class="roiunit" id="roiUnit">clientes novos</span>
+        <p id="roiTxt">e o pacote de 4 Reels já se pagou. Do sexto em diante, é lucro, e os vídeos continuam no seu perfil trazendo mais gente.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="pacotes">
   <div class="wrap">
     <div class="head">
@@ -547,7 +632,7 @@ footer{padding-block:24px 40px;color:var(--muted);font-size:13px}
     <div class="head">
       <span class="eyebrow">◆ Premium</span>
       <h2>Reels + site: seu negócio no Instagram e no Google</h2>
-      <p class="lead">Para quem quer ir além das redes. Na mesma diária eu gravo os Reels, fotografo seus produtos e coloco no ar um site no padrão do <a href="https://relicariotx.com" target="_blank" rel="noopener">Relicário</a>.</p>
+      <p class="lead">Para quem quer ser encontrado também por quem pesquisa no Google: um endereço próprio que trabalha por você todo dia. Na mesma diária eu gravo os Reels, fotografo seus produtos e coloco no ar um site no padrão do <a href="https://relicariotx.com" target="_blank" rel="noopener">Relicário</a>.</p>
     </div>
     <div class="pgrid">
       <article class="pcard">
@@ -591,6 +676,7 @@ footer{padding-block:24px 40px;color:var(--muted);font-size:13px}
         <div class="frames">
           <span>Cada Reel sai a <b>R$ 75</b>, R$ 25 a menos que o avulso.</span>
           <span>Dá <b>um Reel por semana</b> durante um mês inteiro.</span>
+          <span>Depois de postados, os vídeos <b>continuam trabalhando</b> no seu perfil.</span>
         </div>
         <div class="cta-row"><a class="btn" href="https://wa.me/5573981559472?text=Ol%C3%A1%2C%20Samuel%21%20Vi%20sua%20p%C3%A1gina%20e%20quero%20o%20pacote%20de%204%20Reels%20%28R%24%20300%29." target="_blank" rel="noopener">Quero 4 Reels no WhatsApp</a><button class="btn ghost" type="button" data-choose="d4" style="color:inherit;border-color:rgba(255,255,255,.35)">Simular</button></div>
         <p class="note">50% para reservar a data (R$ 150) e 50% na entrega dos Reels.</p>
@@ -748,7 +834,8 @@ footer{padding-block:24px 40px;color:var(--muted);font-size:13px}
       <h2>Antes de fechar</h2>
     </div>
     <div class="faq">
-      <details open><summary>Preciso de site para começar?</summary><p>Não. Você pode começar só pelos Reels. O site entra no Premium, para quem quer aparecer também no Google.</p></details>
+      <details open><summary>Vale mais que anunciar em outdoor, rádio ou panfleto?</summary><p>Para a maioria dos negócios locais, sim. O outdoor só alcança quem passa naquela rua e o rádio dura segundos. O Reel fica no seu perfil, pode ser compartilhado e impulsionado, e você vê quantas pessoas assistiram e quantas te chamaram.</p></details>
+      <details><summary>Preciso de site para começar?</summary><p>Não. Você pode começar só pelos Reels. O site entra no Premium, para quem quer aparecer também no Google.</p></details>
       <details><summary>Por que 4 Reels é o recomendado?</summary><p>Dá um Reel por semana durante um mês inteiro, gravados numa diária só. E cada Reel sai a R$ 75, R$ 25 a menos que o avulso.</p></details>
       <details><summary>A gravação atrapalha o atendimento?</summary><p>Não. Gravo com equipamento leve, sem fechar as portas, e combinamos antes os momentos de maior movimento. Clientes só aparecem nos vídeos com autorização.</p></details>
       <details><summary>E se eu não gostar da edição?</summary><p>Antes de postar, você vê o Reel e pede os ajustes que quiser na edição.</p></details>
@@ -839,7 +926,7 @@ footer{padding-block:24px 40px;color:var(--muted);font-size:13px}
     <div class="final">
       <span class="agenda">Uma diária = um negócio por dia de agenda</span>
       <h2>Um mês de Reels prontos para postar por R$ 300</h2>
-      <p>Reserve a data com R$ 150. O resto você paga quando receber os 4 Reels.</p>
+      <p>Coloque seu dinheiro onde o seu cliente está olhando. Reserve a data com R$ 150 e pague o resto quando receber os 4 Reels.</p>
       <a class="btn pulse" href="https://wa.me/5573981559472?text=Ol%C3%A1%2C%20Samuel%21%20Vi%20sua%20p%C3%A1gina%20e%20quero%20o%20pacote%20de%204%20Reels%20%28R%24%20300%29." target="_blank" rel="noopener">Quero 4 Reels</a>
       <a class="xsell dark" href="https://wa.me/5573981559472?text=Ol%C3%A1%2C%20Samuel%21%20Vi%20sua%20p%C3%A1gina%20e%20quero%20o%20Premium%3A%204%20Reels%20%2B%20site%20%28R%24%201.450%29." target="_blank" rel="noopener">◆ Prefiro o Premium com site (R$ 1.450)</a>
       <div class="contact">
@@ -1150,7 +1237,7 @@ footer{padding-block:24px 40px;color:var(--muted);font-size:13px}
   };
   const LIST = {nenhuma:0, d1:100, d2:200, d4:400, d6:600};
   const state = {rec:'d4', site:'nao', amb:'nao', mes:'nao', man:'nao'};
-  document.querySelectorAll('.seg').forEach(seg => {
+  document.querySelectorAll('.seg[data-key]').forEach(seg => {
     const key = seg.dataset.key;
     OPTS[key].forEach(([v, label, price, note]) => {
       const b = document.createElement('button');
@@ -1172,7 +1259,7 @@ footer{padding-block:24px 40px;color:var(--muted);font-size:13px}
     const b = document.getElementById('tUpBtn'); b.textContent = label; b.onclick = fn;
   }
   function calc(){
-    document.querySelectorAll('.seg').forEach(seg => {
+    document.querySelectorAll('.seg[data-key]').forEach(seg => {
       const key = seg.dataset.key;
       seg.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', b.id === 'opt-' + key + '-' + state[key] ? 'true' : 'false'));
     });
@@ -1238,6 +1325,22 @@ footer{padding-block:24px 40px;color:var(--muted);font-size:13px}
   }
   ptR.addEventListener('click', () => ptab('r'));
   ptS.addEventListener('click', () => ptab('s'));
+
+  /* ---------- Faça a conta ---------- */
+  const roiT = document.getElementById('roiTicket'), roiPack = document.getElementById('roiPack');
+  const PNAME = {300:'o pacote de 4 Reels', 480:'o mês do plano de 8 Reels', 1450:'o Premium'};
+  let roiV = 300;
+  function roi(){
+    const t = Math.max(1, Number(roiT.value) || 0);
+    const n = Math.ceil(roiV / t);
+    document.getElementById('roiN').textContent = n;
+    document.getElementById('roiUnit').textContent = n === 1 ? 'cliente novo' : 'clientes novos';
+    document.getElementById('roiTxt').textContent = 'e ' + PNAME[roiV] + ' já se pagou. Do ' + (n + 1) + 'º em diante é retorno, e os vídeos continuam no seu perfil trazendo mais gente.';
+    roiPack.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', Number(b.dataset.v) === roiV ? 'true' : 'false'));
+  }
+  roiT.addEventListener('input', roi);
+  roiPack.querySelectorAll('button').forEach(b => b.addEventListener('click', () => { roiV = Number(b.dataset.v); roi(); }));
+  roi();
 })();
 </script>
 
